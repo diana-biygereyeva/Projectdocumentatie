@@ -2,14 +2,14 @@
 
 _Projectdocumentatie & Prototyping_
 
-## 📌 Over het project
+##  Over het project
 
 **Lost in Tra(i)nslation** is een webgebaseerd documentatie- en prototypingproject, ontwikkeld door **Diana Biygereyeva (1GDM2)** in het kader van het vak **Prototyping Tools**.  
 De website fungeert als centrale hub waarin het volledige ontwerpproces wordt vastgelegd — van eerste low-fidelity concepten tot uitgewerkte HTML-schermen en interactieve Figma-prototypes. Zowel mobiele als desktopervaringen worden gedocumenteerd en overzichtelijk gepresenteerd.
 
 ---
 
-## 🎯 Doelstellingen
+##  Doelstellingen
 
 - Structuur en visuele kwaliteit brengen in projectdocumentatie
 - Testen en presenteren van **niet-interactieve HTML-schermen**
@@ -19,9 +19,9 @@ De website fungeert als centrale hub waarin het volledige ontwerpproces wordt va
 
 ---
 
-## 🗂️ Projectstructuur
+##  Projectstructuur
 
-### 🔑 Hoofdbestanden
+###  Hoofdbestanden
 
 **index.html**
 
@@ -37,7 +37,7 @@ De website fungeert als centrale hub waarin het volledige ontwerpproces wordt va
 
 ---
 
-### 📁 Mappenstructuur
+###  Mappenstructuur
 
 /assets
 ├─ styles.css
@@ -57,28 +57,28 @@ De website fungeert als centrale hub waarin het volledige ontwerpproces wordt va
 
 ---
 
-## ⚙️ Functionaliteiten
+##  Functionaliteiten
 
-### 🔍 Navigatie
+###  Navigatie
 
 - Responsieve navigatiebalk
 - Mobiel hamburger-menu
 - Smooth scroll
 - Duidelijke actieve states
 
-### 🖱️ Custom Cursor
+###  Custom Cursor
 
 - Volgt muis
 - Hover- en click-animaties
 - Versterkt visuele beleving
 
-### 🗓️ Wekelijkse Documentatie
+###  Wekelijkse Documentatie
 
 - Volledig proces van **Week 01 → Week 12**
 - Duidelijke evolutie van concept → final prototype
 - Individuele HTML-documentatiepagina’s
 
-### 🧩 Prototypes
+###  Prototypes
 
 **Niet-interactief (HTML)**
 
@@ -95,7 +95,7 @@ De website fungeert als centrale hub waarin het volledige ontwerpproces wordt va
 
 ---
 
-## ✉️ Contactformulier
+##  Contactformulier
 
 - Invoervalidatie
 - Privacy akkoord
@@ -104,7 +104,7 @@ De website fungeert als centrale hub waarin het volledige ontwerpproces wordt va
 
 ---
 
-## 🛠️ Technologieën
+##  Technologieën
 
 - HTML5
 - CSS3
@@ -115,7 +115,7 @@ De website fungeert als centrale hub waarin het volledige ontwerpproces wordt va
 
 ---
 
-## ✨ Styling & Typografie
+##  Styling & Typografie
 
 **Fonts**
 
