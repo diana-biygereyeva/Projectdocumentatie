@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diana Biygereyeva 1GDM2 Projectdoc</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="assets/typography.css" />
+    <link rel="stylesheet" href="assets/flexboxes.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+
+  <body class="bg-[#F5EFE8] text-[#592E25]">
+    <!-- Custom cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- REPOSITORY TOGGLE BUTTON -->
+    <button
+      id="repo-toggle"
+      class="repo-toggle bg-gradient-to-br from-[#93A603] to-[#F2594B] text-white px-4 py-3 rounded-l-xl shadow-2xl hover:shadow-3xl hover:scale-110 transition-all duration-300 font-black text-sm border-2 border-[#592E25]"
+    >
+      <div class="flex items-center gap-2">
+        <span>LINKS</span>
+      </div>
+    </button>
+
+    <!-- NAVIGATION -->
+    <nav
+      class="fixed top-0 w-full px-6 md:px-12 py-5 bg-white/95 backdrop-blur-lg border-b-2 border-[#93A603] z-50 shadow-lg"
+    >
+      <div class="flex justify-between items-center max-w-7xl mx-auto">
+        <div class="flex items-center gap-6">
+          <a
+            href="index.html"
+            class="flex items-center gap-3 text-[#592E25] font-black text-base hover:text-[#93A603] transition-colors duration-300"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+            >
+              <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back Home
+          </a>
+          <div class="text-sm text-[#93A603] font-bold">
+            Diana Biygereyeva • 1GDM2
+          </div>
+        </div>
+
+        <!-- Desktop Week Nav -->
+        <div class="hidden md:flex gap-2 flex-wrap">
+          <a
+            href="week 01.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W01</a
+          >
+          <a
+            href="week 02.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W02</a
+          >
+          <a
+            href="week 03.html"
+            class="week-badge active px-4 py-2 rounded-lg text-sm font-black gradient-bg text-white shadow-md relative"
+            >W03</a
+          >
+          <a
+            href="week 04.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W04</a
+          >
+          <a
+            href="week 05.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W05</a
+          >
+          <a
+            href="week 06.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W06</a
+          >
+          <a
+            href="week 07.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W07</a
+          >
+          <div
+            class="px-4 py-2 rounded-lg text-sm font-black bg-gray-300 text-gray-600 opacity-50 line-through cursor-not-allowed"
+          >
+            W08
+          </div>
+          <div
+            class="px-4 py-2 rounded-lg text-sm font-black bg-gray-300 text-gray-600 opacity-50 line-through cursor-not-allowed"
+          >
+            W09
+          </div>
+          <a
+            href="week 10.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W10</a
+          >
+          <a
+            href="week 11.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W11</a
+          >
+          <a
+            href="week 12.html"
+            class="week-badge px-4 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] hover:bg-gray-50 border-2 border-gray-300"
+            >W12</a
+          >
+        </div>
+
+        <button
+          id="nav-toggle"
+          class="md:hidden text-3xl font-bold text-[#F2594B]"
+        >
+          ☰
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div id="nav-mobile" class="hidden md:hidden mt-6 pb-4">
+        <div class="flex flex-wrap gap-2">
+          <a
+            href="week 01.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W01</a
+          >
+          <a
+            href="week 02.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W02</a
+          >
+          <a
+            href="week 03.html"
+            class="px-3 py-2 rounded-lg text-sm font-black gradient-bg text-white"
+            >W03</a
+          >
+          <a
+            href="week 04.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W04</a
+          >
+          <a
+            href="week 05.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W05</a
+          >
+          <a
+            href="week 06.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W06</a
+          >
+          <a
+            href="week 07.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W07</a
+          >
+          <div
+            class="px-3 py-2 rounded-lg text-sm font-black bg-gray-300 text-gray-600 opacity-50 line-through"
+          >
+            W08
+          </div>
+          <div
+            class="px-3 py-2 rounded-lg text-sm font-black bg-gray-300 text-gray-600 opacity-50 line-through"
+          >
+            W09
+          </div>
+          <a
+            href="week 10.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W10</a
+          >
+          <a
+            href="week 11.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W11</a
+          >
+          <a
+            href="week 12.html"
+            class="px-3 py-2 rounded-lg text-sm font-black bg-white text-[#592E25] border-2 border-gray-300"
+            >W12</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="max-w-5xl mx-auto pt-36 pb-20 px-6 relative overflow-hidden">
+      <div class="relative z-10">
+        <p
+          class="inline-flex items-center gap-2 text-[#93A603] uppercase tracking-wider text-xs font-black mb-4 px-5 py-2 bg-[#93A603]/10 rounded-full border-2 border-[#93A603]/30"
+        >
+          <img src="assets/Asset 11.webp" alt="Book" class="small-icon" />
+          Lesweek 03
+        </p>
+        <h1
+          class="text-[clamp(52px,8vw,70px)] font-black leading-tight mb-6 tracking-tight"
+        >
+          <span class="animated-gradient"
+            >Low-fi v3 - Wagonindelingsscherm, Overzichtsscherm,
+            Perronscherm</span
+          ><br />
+        </h1>
+        <div class="w-32 h-2 gradient-bg rounded-full mb-6"></div>
+        <p class="text-[#592E25] text-xl font-black">
+          <span class="text-[#93A603]">Lost in Tra(i)nslation</span>
+        </p>
+      </div>
+    </header>
+
+    <!-- FLOATING REPOSITORY SIDEBAR -->
+    <aside class="repo-sidebar" id="repo-sidebar">
+      <div
+        class="bg-white rounded-2xl p-6 border-2 border-[#93A603] shadow-2xl relative"
+      >
+        <button
+          id="repo-close"
+          class="absolute top-4 right-4 text-[#592E25] hover:text-[#F2594B] font-black text-2xl transition-colors"
+        >
+          ✕
+        </button>
+
+        <h3
+          class="text-xl font-black text-[#93A603] mb-4 flex items-center gap-2"
+        >
+          Prototype
+        </h3>
+
+        <div class="space-y-4">
+          <!-- Non-interactive -->
+          <div>
+            <p
+              class="text-xs font-bold text-[#592E25] mb-2 uppercase tracking-wide"
+            >
+              Niet interactief
+            </p>
+            <div class="flex flex-col gap-2">
+              <a
+                href="public/assets/schermen/overzichtscherm.html"
+                target="_blank"
+                class="px-4 py-2 text-sm font-bold text-[#93A603] bg-[#93A603]/10 rounded-lg hover:bg-[#93A603] hover:text-white transition-all duration-300 border border-[#93A603]/30"
+              >
+                Overzichtsscherm →
+              </a>
+              <a
+                href="public/assets/schermen/perronscherm.html"
+                target="_blank"
+                class="px-4 py-2 text-sm font-bold text-[#93A603] bg-[#93A603]/10 rounded-lg hover:bg-[#93A603] hover:text-white transition-all duration-300 border border-[#93A603]/30"
+              >
+                Perronscherm →
+              </a>
+              <a
+                href="public/assets/schermen/wagonindelingsscherm.html"
+                target="_blank"
+                class="px-4 py-2 text-sm font-bold text-[#93A603] bg-[#93A603]/10 rounded-lg hover:bg-[#93A603] hover:text-white transition-all duration-300 border border-[#93A603]/30"
+              >
+                Wagonindelingsscherm →
+              </a>
+              <a
+                href="https://www.figma.com/design/2jDPdwS682WixnVWT0lYmH/2526_PRTT_BiygereyevaDiana_Midi-prototypes-v?node-id=32-181&t=lc4ExCKHJRO3CvtG-1"
+                target="_blank"
+                class="px-4 py-2 text-sm font-bold text-[#592E25] bg-[#592E25]/10 rounded-lg hover:bg-[#592E25] hover:text-white transition-all duration-300 border border-[#93A603]/30"
+              >
+                Figma →
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive -->
+          <div>
+            <p
+              class="text-xs font-bold text-[#592E25] mb-2 uppercase tracking-wide"
+            >
+              Interactief
+            </p>
+            <div class="flex flex-col gap-2">
+              <a
+                href="https://www.figma.com/proto/2jDPdwS682WixnVWT0lYmH/2526_PRTT_BiygereyevaDiana_Midi-prototypes-v?page-id=340%3A152&node-id=445-258&p=f&viewport=263%2C-714%2C0.38&t=I1TucDSKCdRJbqbE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=445%3A258&show-proto-sidebar=1"
+                target="_blank"
+                class="block px-4 py-2 text-sm font-bold text-[#F2594B] bg-[#F2594B]/10 rounded-lg hover:bg-[#F2594B] hover:text-white transition-all duration-300 border border-[#F2594B]/30"
+              >
+                Presentatie modus →
+              </a>
+              <a
+                href="https://www.figma.com/design/2jDPdwS682WixnVWT0lYmH/2526_PRTT_BiygereyevaDiana_Midi-prototypes-v?node-id=340-152&t=lc4ExCKHJRO3CvtG-1"
+                target="_blank"
+                class="px-4 py-2 text-sm font-bold text-[#592E25] bg-[#592E25]/10 rounded-lg hover:bg-[#592E25] hover:text-white transition-all duration-300 border border-[#93A603]/30"
+              >
+                Figma →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- DOCUMENTATIE -->
+    <main
+      class="max-w-5xl mx-auto px-6 pb-20 space-y-12 text-lg leading-relaxed text-[#592E25]"
+    >
+      <div
+        class="bg-white rounded-3xl p-10 border-2 border-gray-300 shadow-xl space-y-10"
+      >
+        <!-- BELANGRIJKSTE ONTWERPKEUZES -->
+        <div class="space-y-8">
+          <h3 class="text-3xl font-black">Belangrijkste ontwerpkeuzes</h3>
+
+          <!-- 1 -->
+          <div
+            class="bg-[#FDF9F5] rounded-2xl p-8 border-2 border-[#93A603]/30"
+          >
+            <h3
+              class="text-2xl font-black text-[#93A603] mb-4 flex items-center gap-2"
+            >
+              1. Gebruik van stiften (schetsstijl)
+            </h3>
+
+            <p>
+              Schetsen werden deze week uitgewerkt met duidelijke
+              <strong>stiftlijnen</strong>.
+            </p>
+
+            <p class="mt-4">
+              <strong>Waarom?</strong> Verbeterde leesbaarheid tijdens
+              presentaties en feedbacksessies met lector, klant en art director.
+            </p>
+          </div>
+
+          <!-- 2 -->
+          <div class="bg-white rounded-2xl p-8 border-2 border-[#F2594B]/30">
+            <h3
+              class="text-2xl font-black text-[#F2594B] mb-4 flex items-center gap-2"
+            >
+              2. Annotaties toegevoegd op de schermschetsen
+            </h3>
+
+            <ul class="space-y-3 font-bold text-[#592E25]">
+              <li class="flex items-start gap-3">
+                <span class="text-[#F2594B] text-2xl font-black">•</span>
+                <span>
+                  Labels op de schetsen die uitleggen welke component welke
+                  functie heeft.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#F2594B] text-2xl font-black">•</span>
+                <span
+                  >Begrijpelijke benamingen voor elke zone van het scherm.</span
+                >
+              </li>
+            </ul>
+
+            <p class="mt-4">
+              <strong>Waarom?</strong> Voorkomt misinterpretatie en maakt de
+              interpretatie van wireframes sneller en consistenter.
+            </p>
+          </div>
+
+          <!-- 3 -->
+          <div
+            class="bg-[#FDF9F5] rounded-2xl p-8 border-2 border-[#EAF205]/30"
+          >
+            <h3
+              class="text-2xl font-black text-[#93A603] mb-4 flex items-center gap-2"
+            >
+              3. Treinsamenstellingsscherm (wagon-weergave)
+            </h3>
+
+            <ul class="space-y-3 font-bold text-[#592E25]">
+              <li class="flex items-start gap-3">
+                <span class="text-[#93A603] text-2xl font-black">•</span>
+                <span>
+                  Meer nadruk op omschrijvingen voor <strong>1e klas</strong>.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="text-[#93A603] text-2xl font-black">•</span>
+                <span>
+                  Verbetering van onderscheid tussen functies en wagonnummers.
+                </span>
+              </li>
+            </ul>
+
+            <p class="mt-4">
+              <strong>Waarom?</strong> De aanduiding van 1e klas en functies
+              bleek onvoldoende duidelijk tijdens vorige feedbackronde.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UX VRAGEN -->
+      <div class="bg-white rounded-3xl p-10 border-2 border-gray-300 shadow-xl">
+        <h3 class="text-3xl font-black mb-6">UX/UI-vragen</h3>
+
+        <ul class="space-y-3 font-bold text-[#592E25]">
+          <li class="flex items-start gap-3">
+            <span class="text-[#93A603] text-2xl font-black">•</span>
+            <span>
+              Hoe zorg ik dat schetsen door iedereen — ook niet-designers — snel
+              te begrijpen zijn?
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-[#93A603] text-2xl font-black">•</span>
+            <span>
+              Hoeveel tekstlabels zijn nodig naast iconen om verwarring te
+              voorkomen?
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-[#93A603] text-2xl font-black">•</span>
+            <span>
+              Hoort het wagonindelingsscherm enkel in de trein zelf, of ook op
+              perronschermen?
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- USABILITY CHECKS -->
+      <div
+        class="bg-[#FDF9F5] rounded-3xl p-10 border-2 border-gray-300 shadow-xl"
+      >
+        <h3 class="text-3xl font-black mb-6">Snelle usability-checks</h3>
+
+        <ul class="space-y-3 font-bold text-[#592E25]">
+          <li class="flex items-start gap-3">
+            <span class="text-[#F2594B] text-2xl font-black">•</span>
+            <span>
+              Annotaties maakten de bedoeling achter iconen en indelingen meteen
+              duidelijk.
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-[#F2594B] text-2xl font-black">•</span>
+            <span>
+              Aandacht blijft nodig voor consistente symboliek — sommige iconen
+              zijn nog te klein.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- VOLGENDE STAPPEN -->
+      <div class="bg-white rounded-3xl p-10 border-2 border-gray-300 shadow-xl">
+        <h3 class="text-3xl font-black mb-6">Volgende stappen</h3>
+
+        <ul class="space-y-3 font-bold text-[#592E25]">
+          <li class="flex items-start gap-3">
+            <span class="text-[#93A603] text-2xl font-black">•</span>
+            <span>
+              Testen of iconen universeel herkenbaar genoeg zijn zonder
+              begeleidende tekstlabels.
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-[#93A603] text-2xl font-black">•</span>
+            <span>
+              Evalueren of kleur in de wagonweergave kan helpen om
+              <strong>1e klas</strong>, <strong>2e klas</strong> en functies
+              beter te onderscheiden.
+            </span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-[#93A603] text-2xl font-black">•</span>
+            <span>
+              Verder verfijnen van de visuele hiërarchie
+              <span class="italic">(Figma)</span>.
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- ACCORDION / SCHETSEN -->
+      <div class="space-y-6">
+        <h2
+          class="text-5xl font-black mb-8 tracking-tight flex items-center gap-3"
+        >
+          <span class="animated-gradient">Schetsen</span>
+        </h2>
+
+        <!-- SCHETS 1 -->
+        <div
+          class="bg-white border-2 border-gray-300 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+        >
+          <button
+            onclick="toggleAccordion(this)"
+            class="w-full flex justify-between items-center bg-gradient-to-r from-[#FDF9F5] to-white px-8 py-6 text-left font-black text-xl"
+          >
+            <span class="text-[#93A603]">Overzichtsscherm</span>
+            <span
+              class="text-3xl accordion-icon text-[#F2594B] transition-transform duration-300"
+              >▼</span
+            >
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-500"
+          >
+            <div class="p-8 bg-gradient-to-br from-[#F5EFE8] to-white">
+              <img
+                src="public/img/LW03_1.jpg"
+                alt="Schets treinsamenstelling"
+                class="rounded-2xl mx-auto shadow-xl max-w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- SCHETS 2 -->
+        <div
+          class="bg-white border-2 border-gray-300 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+        >
+          <button
+            onclick="toggleAccordion(this)"
+            class="w-full flex justify-between items-center bg-gradient-to-r from-white to-[#F5EFE8] px-8 py-6 text-left font-black text-xl"
+          >
+            <span class="text-[#F2594B]">Perronscherm</span>
+            <span
+              class="text-3xl accordion-icon text-[#93A603] transition-transform duration-300"
+              >▼</span
+            >
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-500"
+          >
+            <div class="p-8 bg-gradient-to-br from-white to-[#F5EFE8]">
+              <img
+                src="public/img/LW03_2.jpg"
+                alt="Schets vertrekbord"
+                class="rounded-2xl border-2 mx-auto shadow-xl max-w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- SCHETS 3 -->
+        <div
+          class="bg-white border-2 border-gray-300 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+        >
+          <button
+            onclick="toggleAccordion(this)"
+            class="w-full flex justify-between items-center bg-gradient-to-r from-[#FDF9F5] to-white px-8 py-6 text-left font-black text-xl"
+          >
+            <span class="text-[#93A603]">Wagonindelingsscherm</span>
+            <span
+              class="text-3xl accordion-icon text-[#F2594B] transition-transform duration-300"
+              >▼</span
+            >
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-500"
+          >
+            <div class="p-8 bg-gradient-to-br from-[#F5EFE8] to-white">
+              <img
+                src="public/img/LW03_3.jpg"
+                alt="Schets detail"
+                class="rounded-2xl mx-auto shadow-xl max-w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGINATION -->
+      <div
+        class="flex flex-col md:flex-row justify-between gap-6 mt-20 pt-12 border-t-2 border-gray-300"
+      >
+        <a
+          href="week 02.html"
+          class="flex items-center gap-3 px-10 py-4 bg-white border-2 border-gray-300 rounded-xl font-black shadow-md hover:shadow-xl transition-all duration-300 text-base"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+          Vorige Week
+        </a>
+
+        <a
+          href="week 04.html"
+          class="flex items-center gap-3 px-10 py-4 gradient-bg text-white rounded-xl font-black shadow-xl hover:shadow-2xl hover:scale-110 transition-all duration-300 text-base border-2 border-[#592E25]"
+        >
+          Volgende Week
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </a>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-[#592E25] text-white mt-20 py-20 px-6 relative overflow-hidden border-t-4 border-[#EAF205]"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 justify-between relative z-10"
+      >
+        <div class="flex items-start gap-3">
+          <img
+            src="assets/Asset 14.webp"
+            alt="Map"
+            class="icon-img opacity-80"
+          />
+          <div>
+            <h3 class="text-2xl font-black mb-2">Lost in Tra(i)nslation</h3>
+            <p class="text-base font-bold text-white/90">
+              Diana Biygereyeva • 1GDM2
+            </p>
+            <p class="text-sm text-white/80 font-semibold">
+              Prototyping Tools • 2025
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <a
+            class="flex items-center gap-3 hover:text-[#93A603] transition-colors duration-300 font-bold text-base"
+            target="_blank"
+            href="https://github.com/yourusername/yourrepository"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            GitHub Repository
+          </a>
+          <a
+            class="flex items-center gap-3 hover:text-[#EAF205] transition-colors duration-300 font-bold text-base"
+            href="/path/to/design-documentation.pdf"
+            download
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+              />
+            </svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+      // Custom cursor
+      const cursor = document.getElementById("cursor");
+      const hoverElements = document.querySelectorAll("a, button");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+
+      document.addEventListener("mousedown", () => {
+        cursor.classList.add("clicking");
+      });
+
+      document.addEventListener("mouseup", () => {
+        cursor.classList.remove("clicking");
+      });
+
+      hoverElements.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("hovering");
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hovering");
+        });
+      });
+
+      // Accordion
+      function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector(".accordion-icon");
+
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+          content.style.maxHeight = "0px";
+          icon.style.transform = "rotate(0deg)";
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.style.transform = "rotate(180deg)";
+        }
+      }
+
+      const toggle = document.getElementById("nav-toggle");
+      const mobileMenu = document.getElementById("nav-mobile");
+
+      toggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Repository sidebar toggle
+      const repoToggle = document.getElementById("repo-toggle");
+      const repoSidebar = document.getElementById("repo-sidebar");
+      const repoClose = document.getElementById("repo-close");
+
+      repoToggle.addEventListener("click", () => {
+        repoSidebar.classList.add("active");
+        repoToggle.classList.add("hidden");
+      });
+
+      repoClose.addEventListener("click", () => {
+        repoSidebar.classList.remove("active");
+        repoToggle.classList.remove("hidden");
+      });
+
+      // Close sidebar when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !repoSidebar.contains(e.target) &&
+          !repoToggle.contains(e.target) &&
+          repoSidebar.classList.contains("active")
+        ) {
+          repoSidebar.classList.remove("active");
+          repoToggle.classList.remove("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
