@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diana Biygereyeva 1GDM2 Projectdoc</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="assets/typography.css" />
+    <link rel="stylesheet" href="assets/flexboxes.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+
+  <body class="bg-[#F5EFE8] text-[#592E25] overflow-x-hidden">
+    <!-- Custom cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- NAVIGATION -->
+    <nav
+      class="fixed w-full bg-white/95 backdrop-blur-lg border-b-2 border-[#93A603] px-6 py-5 z-50 shadow-lg"
+    >
+      <div class="flex justify-between items-center max-w-7xl mx-auto">
+        <div class="flex items-center gap-3">
+          <img src="assets/Asset 14.webp" alt="Map" class="small-icon" />
+          <div>
+            <div class="text-xl font-black tracking-tight text-[#592E25]">
+              Lost in Tra(i)nslation
+            </div>
+            <div class="text-sm text-[#93A603] font-bold">
+              Diana Biygereyeva • 1GDM2
+            </div>
+          </div>
+        </div>
+
+        <button
+          id="nav-toggle"
+          class="md:hidden text-3xl font-bold text-[#F2594B]"
+        >
+          ☰
+        </button>
+
+        <ul class="hidden md:flex space-x-8 text-sm font-black text-[#592E25]">
+          <li>
+            <a
+              href="#home"
+              class="hover:text-[#93A603] transition-colors duration-300"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="#weeks"
+              class="hover:text-[#F2594B] transition-colors duration-300"
+              >DOCUMENTATIE</a
+            >
+          </li>
+          <li>
+            <a
+              href="#prototypes"
+              class="hover:text-[#EAF205] transition-colors duration-300"
+              >PROTOTYPES</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="block hover:text-[#F2594B]"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <ul
+        id="nav-mobile"
+        class="hidden flex-col space-y-3 mt-6 text-[#592E25] font-bold md:hidden"
+      >
+        <li><a href="#home" class="block hover:text-[#93A603]">HOME</a></li>
+        <li>
+          <a href="#weeks" class="block hover:text-[#F2594B]">DOCUMENTATIE</a>
+        </li>
+        <li>
+          <a href="#prototypes" class="block hover:text-[#EAF205]"
+            >PROTOTYPES</a
+          >
+        </li>
+        <li>
+          <a
+            href="contact.html"
+            class="hover:text-[#F2594B] transition-colors duration-300"
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32 pb-20 relative overflow-hidden"
+    >
+      <!-- HOME -->
+
+      <div class="relative z-10">
+        <h1
+          class="text-[clamp(64px,11vw,140px)] font-black leading-[0.9] mb-8 tracking-tight"
+        >
+          <span class="animated-gradient">Lost in</span><br />
+          <span class="animated-gradient">Tra(i)nslation</span>
+        </h1>
+
+        <p
+          class="justify-center items-center text-[#592E25] leading-relaxed font-bold"
+        >
+          Projectdocumentatie Prototyping Tools<br /><br />
+        </p>
+
+        <div class="flex flex-wrap gap-6 justify-center items-center">
+          <a
+            href="#weeks"
+            class="flex items-center gap-3 px-12 py-5 bg-[#93A603] text-white font-black rounded-xl shadow-xl hover:bg-[#7A8A02] hover:shadow-2xl hover:scale-110 transition-all duration-300 text-base border-2 border-[#592E25]"
+          >
+            <img src="assets/Asset 11.webp" alt="Book" class="small-icon" />
+            Web documentatie
+          </a>
+
+          <a
+            href="/path/to/design-documentation.pdf"
+            download
+            class="flex items-center gap-3 px-12 py-5 bg-white border-3 border-[#F2594B] text-[#F2594B] font-black rounded-xl shadow-xl hover:bg-[#F2594B] hover:text-white transition-all duration-300 text-base"
+          >
+            <img src="assets/Asset 13.webp" alt="Passport" class="small-icon" />
+            Download PDF
+          </a>
+        </div>
+
+        <div class="scroll-indicator mt-20 text-[#93A603] text-lg font-black">
+          ↓ Scroll ↓
+        </div>
+      </div>
+    </section>
+
+    <!-- WEEKS -->
+    <section
+      id="weeks"
+      class="min-h-screen px-6 py-24 relative bg-white border-t-4 border-[#93A603]"
+    >
+      <div class="max-w-6xl mx-auto relative z-10">
+        <div class="flex items-center gap-4 mb-6">
+          <h2 class="text-[clamp(48px,7vw,90px)] font-black tracking-tight">
+            <span class="animated-gradient">Wekelijkse documentatie</span>
+          </h2>
+        </div>
+
+        <div class="w-32 h-3 gradient-bg rounded-full mb-16"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+          <!-- Week cards -->
+          <a
+            href="week 01.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#93A603] shadow-lg hover:border-[#93A603] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#93A603] transition-colors"
+              >
+                Week 01
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#93A603] rounded-full"></div>
+            <br />
+            <p>Low-fi v1 - Overzichtsscherm, Perronscherm</p>
+          </a>
+
+          <a
+            href="week 02.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#F2594B] shadow-lg hover:border-[#F2594B] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#93A603] transition-colors"
+              >
+                Week 02
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#93A603] rounded-full"></div>
+            <br />
+            <p>
+              Low-fi v2 - Wagonindelingsscherm, Overzichtsscherm, Perronscherm
+            </p>
+          </a>
+
+          <a
+            href="week 03.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#EAF205] shadow-lg hover:border-[#EAF205] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#93A603] transition-colors"
+              >
+                Week 03
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#93A603] rounded-full"></div>
+            <br />
+            <p>
+              Low-fi v3 - Wagonindelingsscherm, Overzichtsscherm, Perronscherm
+            </p>
+          </a>
+
+          <a
+            href="week 04.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#93A603] shadow-lg hover:border-[#93A603] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#93A603] transition-colors"
+              >
+                Week 04
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#93A603] rounded-full"></div>
+            <br />
+            <p>
+              Midi-fi (figma) - kleurgebruik & iconen HTML digitale prototypes
+              ChatGPT
+            </p>
+          </a>
+
+          <a
+            href="week 05.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#F2594B] shadow-lg hover:border-[#F2594B] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#93A603] transition-colors"
+              >
+                Week 05
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#93A603] rounded-full"></div>
+            <br />
+            <p>HTML/CSS-aanpassen, schermen verder verfijnen</p>
+          </a>
+
+          <a
+            href="week 06.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#EAF205] shadow-lg hover:border-[#EAF205] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#93A603] transition-colors"
+              >
+                Week 06
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#93A603] rounded-full"></div>
+            <br />
+            <p>Projectdoc v0 - HTML/CSS</p>
+          </a>
+
+          <a
+            href="week 07.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#93A603] shadow-lg hover:border-[#93A603] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#93A603] transition-colors"
+              >
+                Week 07
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#93A603] rounded-full"></div>
+            <br />
+            <p>Projectdoc v1 : v2 - HTML/CSS</p>
+          </a>
+
+          <a class="bg-[#F2F2F2] p-8 rounded-2xl border-3">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-3xl font-black text-[#A6A6A6] transition-colors">
+                Week 08
+              </h3>
+              <span class="text-4xl text-[#A6A6A6]">✕</span>
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#A6A6A6] rounded-full"></div>
+          </a>
+
+          <a class="bg-[#F2F2F2] p-8 rounded-2xl border-3">
+            <div class="flex justify-between items-start mb-2">
+              <h3 class="text-3xl font-black text-[#A6A6A6] transition-colors">
+                Week 09
+              </h3>
+              <span class="text-4xl text-[#A6A6A6]">✕</span>
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#A6A6A6] rounded-full"></div>
+          </a>
+
+          <a
+            href="week 10.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#EAF205] shadow-lg hover:border-[#EAF205] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#F2594B] transition-colors"
+              >
+                Week 10
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#F2594B] rounded-full"></div>
+            <br />
+            <p>Projectdoc v3 - HTML/CSS/Tailwind Mobiele scherm v1 - Figma</p>
+          </a>
+
+          <a
+            href="week 11.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#EAF205] shadow-lg hover:border-[#EAF205] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#F2594B] transition-colors"
+              >
+                Week 11
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#F2594B] rounded-full"></div>
+            <br />
+            <p>Projectdoc v4 - HTML/CSS/Tailwind Mobiele scherm v2 - Figma</p>
+          </a>
+
+          <a
+            href="week 12.html"
+            class="card-hover bg-[#F5EFE8] p-8 rounded-2xl border-3 border-[#EAF205] shadow-lg hover:border-[#EAF205] group relative"
+          >
+            <div class="flex justify-between items-start mb-2">
+              <h3
+                class="text-3xl font-black text-[#592E25] group-hover:text-[#F2594B] transition-colors"
+              >
+                Week 12 - FINAL
+              </h3>
+              <span
+                class="text-4xl group-hover:translate-x-2 transition-transform"
+                >→</span
+              >
+            </div>
+            <!-- Lijn eronder -->
+            <div class="w-16 h-2 bg-[#F2594B] rounded-full"></div>
+            <br />
+            <p>Projectdoc v5 - HTML/CSS/Tailwind Mobiele scherm v3 - Figma</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROTOTYPES -->
+    <section
+      id="prototypes"
+      class="min-h-screen px-6 py-24 bg-[#F5EFE8] relative overflow-hidden border-t-4 border-[#F2594B]"
+    >
+      <div class="max-w-6xl mx-auto relative z-10">
+        <h2 class="text-[clamp(48px,7vw,70px)] font-black mb-4 tracking-tight">
+          <span class="text-[#592E25]">De meest recente</span>
+          <span class="animated-gradient">- prototypes</span>
+        </h2>
+
+        <div class="w-32 h-3 gradient-bg rounded-full mb-12"></div>
+
+        <p
+          class="text-[clamp(20px,2.3vw,28px)] text-[#592E25] font-black leading-snug mb-16 max-w-3xl"
+        >
+          Bekijk de huidige versies van het interactief en niet-interactief
+          prototype.
+        </p>
+
+        <!-- Niet-interactief -->
+        <div
+          class="bg-white rounded-3xl p-10 mb-12 border-3 border-[#93A603] shadow-xl"
+        >
+          <h3
+            class="text-4xl text-[#93A603] mb-8 font-black flex items-center gap-3"
+          >
+            Niet-interactieve Schermen
+          </h3>
+          <div class="flex flex-col gap-5">
+            <a
+              href="public/assets/schermen/overzichtscherm.html"
+              target="_blank"
+              class="px-10 py-5 text-lg font-black text-white bg-[#93A603] rounded-xl shadow-lg hover:bg-[#7A8A02] hover:shadow-2xl hover:translate-x-3 transition-all duration-300 text-center border-2 border-[#592E25]"
+            >
+              Overzichtsscherm →
+            </a>
+
+            <a
+              href="public/assets/schermen/perronscherm.html"
+              target="_blank"
+              class="px-10 py-5 text-lg font-black text-white bg-[#93A603] rounded-xl shadow-lg hover:bg-[#7A8A02] hover:shadow-2xl hover:translate-x-3 transition-all duration-300 text-center border-2 border-[#592E25]"
+            >
+              Perronscherm →
+            </a>
+
+            <a
+              href="public/assets/schermen/wagonindelingsscherm.html"
+              target="_blank"
+              class="px-10 py-5 text-lg font-black text-white bg-[#93A603] rounded-xl shadow-lg hover:bg-[#7A8A02] hover:shadow-2xl hover:translate-x-3 transition-all duration-300 text-center border-2 border-[#592E25]"
+            >
+              Wagonindelingsscherm →
+            </a>
+
+            <a
+              href="public/assets/schermen/wagonindelingsscherm.html"
+              target="_blank"
+              class="px-10 py-5 text-lg font-black text-white bg-[#592E25] rounded-xl shadow-lg hover:bg-[#3C1F19] hover:shadow-2xl hover:translate-x-3 transition-all duration-300 text-center border-2 border-[#592E25]"
+            >
+              Bekijk de ontwerpen in Figma →
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactief -->
+        <div
+          class="bg-white rounded-3xl p-10 border-3 border-[#F2594B] shadow-xl"
+        >
+          <h3
+            class="text-4xl text-[#F2594B] mb-8 font-black flex items-center gap-3"
+          >
+            Interactieve Schermen
+          </h3>
+          <div class="grid grid-cols-2 gap-5">
+            <a
+              href="https://www.figma.com/proto/2jDPdwS682WixnVWT0lYmH/2526_PRTT_BiygereyevaDiana_Midi-prototypes-v?page-id=340%3A152&node-id=445-258&p=f&viewport=263%2C-714%2C0.38&t=I1TucDSKCdRJbqbE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=445%3A258&show-proto-sidebar=1"
+              target="_blank"
+              class="inline-flex items-center px-12 py-6 text-lg font-black gradient-bg text-white rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-[#592E25]"
+            >
+              Presentatie modus →
+            </a>
+
+            <a
+              href="https://www.figma.com/proto/2jDPdwS682WixnVWT0lYmH/2526_PRTT_BiygereyevaDiana_Midi-prototypes-v?page-id=340%3A152&node-id=445-258&p=f&viewport=263%2C-714%2C0.38&t=I1TucDSKCdRJbqbE-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=445%3A258&show-proto-sidebar=1"
+              target="_blank"
+              class="inline-flex items-center px-12 py-6 text-lg font-black bg-[#592E25] text-white rounded-xl shadow-xl hover:bg-[#3C1F19] hover:shadow-2xl hover:translate-x-3 transition-all duration-300 text-center border-2 border-[#592E25]"
+            >
+              Bekijk de ontwerpen in Figma →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="px-6 py-20 bg-[#592E25] text-white relative overflow-hidden border-t-4 border-[#EAF205]"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap justify-between gap-10 relative z-10"
+      >
+        <div class="flex items-start gap-3">
+          <img
+            src="assets/Asset 14.webp"
+            alt="Map"
+            class="icon-img opacity-80"
+          />
+          <div>
+            <h3 class="text-2xl font-black mb-2">Lost in Tra(i)nslation</h3>
+            <p class="text-base font-bold text-white/90">
+              Diana Biygereyeva • 1GDM2
+            </p>
+            <p class="text-sm text-white/80 font-semibold">
+              Prototyping Tools • 2025
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-5">
+          <a
+            class="flex items-center gap-3 hover:text-[#93A603] transition-colors duration-300 font-bold text-base"
+            target="_blank"
+            href="https://github.com/yourusername/yourrepository"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            GitHub Repository
+          </a>
+          <a
+            class="flex items-center gap-3 hover:text-[#EAF205] transition-colors duration-300 font-bold text-base"
+            href="/path/to/design-documentation.pdf"
+            download
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"
+              />
+            </svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Custom cursor
+      const cursor = document.getElementById("cursor");
+      const hoverElements = document.querySelectorAll("a, button, .card-hover");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+
+      document.addEventListener("mousedown", () => {
+        cursor.classList.add("clicking");
+      });
+
+      document.addEventListener("mouseup", () => {
+        cursor.classList.remove("clicking");
+      });
+
+      hoverElements.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("hovering");
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hovering");
+        });
+      });
+
+      // Navigation
+      const toggle = document.getElementById("nav-toggle");
+      const mobileMenu = document.getElementById("nav-mobile");
+
+      toggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

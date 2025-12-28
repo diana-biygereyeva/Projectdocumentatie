@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Lost in Tra(i)nslation</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="assets/typography.css" />
+    <link rel="stylesheet" href="assets/flexboxes.css" />
+    <link rel="stylesheet" href="assets/nav.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/forms.css" />
+  </head>
+
+  <body class="bg-[#F5EFE8] text-[#592E25] overflow-x-hidden">
+    <!-- Custom cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- NAVIGATION -->
+    <nav
+      class="fixed w-full bg-white/95 backdrop-blur-lg border-b-2 border-[#93A603] px-6 py-5 z-50 shadow-lg"
+    >
+      <div class="flex justify-between items-center max-w-7xl mx-auto">
+        <div class="flex items-center gap-3">
+          <img src="assets/Asset 14.webp" alt="Map" class="small-icon" />
+          <div>
+            <div class="text-xl font-black tracking-tight text-[#592E25]">
+              Lost in Tra(i)nslation
+            </div>
+            <div class="text-sm text-[#93A603] font-bold">
+              Diana Biygereyeva • 1GDM2
+            </div>
+          </div>
+        </div>
+
+        <button
+          id="nav-toggle"
+          class="md:hidden text-3xl font-bold text-[#F2594B]"
+        >
+          ☰
+        </button>
+
+        <ul class="hidden md:flex space-x-8 text-sm font-black text-[#592E25]">
+          <li>
+            <a
+              href="index.html#home"
+              class="hover:text-[#93A603] transition-colors duration-300"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#weeks"
+              class="hover:text-[#F2594B] transition-colors duration-300"
+              >DOCUMENTATIE</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#prototypes"
+              class="hover:text-[#EAF205] transition-colors duration-300"
+              >PROTOTYPES</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="hover:text-[#F2594B] transition-colors duration-300 border-b-2 border-[#F2594B]"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <ul
+        id="nav-mobile"
+        class="hidden flex-col space-y-3 mt-6 text-[#592E25] font-bold md:hidden"
+      >
+        <li>
+          <a href="index.html#home" class="block hover:text-[#93A603]">HOME</a>
+        </li>
+        <li>
+          <a href="index.html#weeks" class="block hover:text-[#F2594B]"
+            >DOCUMENTATIE</a
+          >
+        </li>
+        <li>
+          <a href="index.html#prototypes" class="block hover:text-[#EAF205]"
+            >PROTOTYPES</a
+          >
+        </li>
+        <li>
+          <a href="contact.html" class="block hover:text-[#F2594B]">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section
+      class="min-h-screen flex flex-col justify-center items-center px-6 pt-32 pb-20 relative overflow-hidden"
+    >
+      <div class="max-w-3xl w-full relative z-10">
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h1
+            class="text-[clamp(48px,8vw,96px)] font-black leading-[0.9] mb-6 tracking-tight"
+          >
+            <span class="animated-gradient">Contact</span>
+          </h1>
+          <p class="text-lg text-[#592E25] mb-4 font-medium">
+            Heb je vragen of wil je meer informatie over dit project? Stuur me
+            een bericht!
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div
+          class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl p-8 md:p-12 border-2 border-[#93A603]"
+        >
+          <form id="contactForm">
+            <!-- Naam velden -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label
+                  for="firstName"
+                  class="block text-[#592E25] font-bold mb-2"
+                  >Voornaam *</label
+                >
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border-2 border-[#93A603] focus:outline-none focus:border-[#F2594B] transition-colors bg-white/50 text-[#592E25] font-medium"
+                />
+              </div>
+              <div>
+                <label
+                  for="lastName"
+                  class="block text-[#592E25] font-bold mb-2"
+                  >Achternaam *</label
+                >
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border-2 border-[#93A603] focus:outline-none focus:border-[#F2594B] transition-colors bg-white/50 text-[#592E25] font-medium"
+                />
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-6">
+              <label for="email" class="block text-[#592E25] font-bold mb-2"
+                >E-mailadres *</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 rounded-lg border-2 border-[#93A603] focus:outline-none focus:border-[#F2594B] transition-colors bg-white/50 text-[#592E25] font-medium"
+              />
+            </div>
+
+            <!-- Onderwerp -->
+            <div class="mb-6">
+              <label for="subject" class="block text-[#592E25] font-bold mb-2"
+                >Onderwerp *</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                class="w-full px-4 py-3 rounded-lg border-2 border-[#93A603] focus:outline-none focus:border-[#F2594B] transition-colors bg-white/50 text-[#592E25] font-medium"
+              />
+            </div>
+
+            <!-- Bericht -->
+            <div class="mb-6">
+              <label for="message" class="block text-[#592E25] font-bold mb-2"
+                >Bericht *</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full px-4 py-3 rounded-lg border-2 border-[#93A603] focus:outline-none focus:border-[#F2594B] transition-colors bg-white/50 text-[#592E25] font-medium resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Privacy akkoord -->
+            <div class="mb-8 flex items-start gap-3">
+              <input
+                type="checkbox"
+                id="privacy"
+                name="privacy"
+                required
+                class="mt-1 w-5 h-5 rounded border-2 border-[#93A603] text-[#93A603] focus:ring-[#F2594B]"
+              />
+              <label for="privacy" class="text-sm text-[#592E25] font-medium">
+                Ik ga akkoord met de verwerking van mijn gegevens voor
+                contactdoeleinden. *
+              </label>
+            </div>
+
+            <!-- Submit button -->
+            <button
+              type="submit"
+              class="w-full bg-[#F2594B] hover:bg-[#93A603] text-white font-black py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-lg tracking-wide"
+            >
+              VERSTUUR BERICHT
+            </button>
+          </form>
+
+          <!-- Success Message -->
+          <div
+            id="successMessage"
+            class="hidden mt-6 p-4 bg-[#93A603] text-white rounded-lg font-bold text-center"
+          >
+            <p>✓ Bedankt voor je bericht!</p>
+            <p class="text-sm font-normal mt-1">
+              Je e-mailclient wordt geopend.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="mt-12 text-center">
+          <p class="text-[#592E25] font-medium">
+            Of neem direct contact op via:
+            <a
+              href="mailto:diana.biygereyeva@student.ap.be"
+              class="text-[#F2594B] font-bold hover:underline"
+            >
+              diana.biygereyeva@student.ap.be
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Custom cursor
+      const cursor = document.getElementById("cursor");
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      });
+
+      document.addEventListener("mousedown", () => {
+        cursor.classList.add("clicking");
+      });
+
+      document.addEventListener("mouseup", () => {
+        cursor.classList.remove("clicking");
+      });
+
+      const interactiveElements = document.querySelectorAll(
+        "a, button, input, textarea"
+      );
+      interactiveElements.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("hovering");
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hovering");
+        });
+      });
+
+      // Mobile navigation toggle
+      const navToggle = document.getElementById("nav-toggle");
+      const navMobile = document.getElementById("nav-mobile");
+
+      navToggle.addEventListener("click", () => {
+        navMobile.classList.toggle("hidden");
+        navMobile.classList.toggle("flex");
+      });
+
+      // Form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form data
+          const formData = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+          };
+
+          // Create mailto link
+          const mailtoLink = `mailto:diana.biygereyeva@student.ap.be?subject=${encodeURIComponent(
+            formData.subject
+          )}&body=${encodeURIComponent(
+            `Van: ${formData.firstName} ${formData.lastName}\nE-mail: ${formData.email}\n\nBericht:\n${formData.message}`
+          )}`;
+
+          // Open email client
+          window.location.href = mailtoLink;
+
+          // Show success message
+          document.getElementById("successMessage").classList.remove("hidden");
+
+          // Reset form after delay
+          setTimeout(function () {
+            document.getElementById("contactForm").reset();
+            setTimeout(function () {
+              document.getElementById("successMessage").classList.add("hidden");
+            }, 3000);
+          }, 2000);
+        });
+    </script>
+  </body>
+</html>

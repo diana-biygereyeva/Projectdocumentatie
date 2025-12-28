@@ -1,0 +1,161 @@
+.custom-cursor {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  pointer-events: none;
+  
+  z-index: 9999;
+  transition: transform 0.15s ease-out;
+
+  background-image: url("cursor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+  will-change: transform;
+}
+
+
+
+*, *::before, * ::after {    
+cursor: none !important; 
+}
+
+
+.custom-cursor.clicking {
+cursor: none;
+transform: translate(-50%, -50%) scale(0.8);
+}
+
+
+.custom-cursor.hovering {
+transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+/* Cards */
+.card-hover {
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.card-hover:hover {
+transform: translateY(-12px);
+box-shadow: 0 20px 40px rgba(89, 46, 37, 0.3);
+}
+
+
+/* Week badges */
+.week-badge {
+transition: all 0.3s ease;
+}
+
+
+.week-badge:hover {
+transform: scale(1.05) rotate(-2deg);
+}
+
+
+.week-badge.active {
+transform: scale(1.1);
+}
+
+
+/* Icons */
+.icon-img {
+width: 60px;
+height: 60px;
+object-fit: contain;
+display: inline-block;
+}
+
+
+.small-icon {
+width: 40px;
+height: 40px;
+object-fit: contain;
+display: inline-block;
+}
+
+
+
+      /* Floating sidebar for repository links */
+      .repo-sidebar {
+        position: fixed;
+        right: -300px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 280px;
+        z-index: 40;
+        transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .repo-sidebar.active {
+        right: 20px;
+      }
+
+      /* Repository toggle button */
+      .repo-toggle {
+        cursor:none;
+        position: fixed;
+        right: 20px;
+        top: 45%;
+        transform: translateY(-50%);
+        z-index: 39;
+        transition: all 0.3s ease;
+      }
+
+      .repo-toggle.hidden {
+        right: -80px;
+      }
+
+      @media (max-width: 1400px) {
+        .repo-sidebar {
+          width: 240px;
+          right: -260px;
+        }
+
+        .repo-sidebar.active {
+          right: 10px;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .repo-sidebar {
+          position: static;
+          transform: none;
+          width: 100%;
+          margin: 2rem 0;
+          right: 0;
+        }
+
+        .repo-toggle {
+          display: none;
+        }
+      }
+
+
+/* Animated gradient text */
+.animated-gradient {
+  background: linear-gradient(
+    90deg,
+    #592E25 0%,
+    #93A603 25%,
+    #F2594B 50%,
+    #592E25 90%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 8s linear infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
